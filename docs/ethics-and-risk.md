@@ -79,15 +79,21 @@ The team should:
 
 ---
 
-## 6. Tutor Ethics Confirmation
+### 6. Tutor Ethics Confirmation
 
-The team should confirm the following points with the tutor:
+Tutor ethics confirmation: Confirmed verbally with tutor in Week 3.
 
-* Whether a short anonymous prioritisation survey is permitted.
-* Whether written consent is required.
-* Whether the survey needs a short information statement.
-* Whether raw responses may be stored privately during the project.
-* Whether later usability testing requires a separate consent process.
+The tutor confirmed that the team may conduct a short anonymous prioritisation survey as long as no sensitive personal information is collected and only anonymised summary results are used in the project documentation.
+
+The exact confirmation date should be checked against the team meeting record.
+
+### Follow-Up Owner
+
+Sihan Zhong
+
+### Current Status
+
+Completed
 
 ### Current Status
 
