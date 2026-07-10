@@ -2,6 +2,10 @@
 
 **Your first month in Singapore, sorted.**
 
+> **Week 6 release candidate:** the first usable Before Arrival checklist now includes
+> saved browser progress, visible completion status and dated official-source links.
+> Arrival Day, First Week, First Month and topic guides are scheduled for Week 7.
+
 Landed turns a chaotic first month into one sequenced, plain-language checklist —
 *what to do, and in what order* — with every step linked to its official source.
 
@@ -107,19 +111,23 @@ landed/
 │   ├── index.html
 │   └── assets/
 │       ├── css/styles.css
-│       └── js/app.js
+│       └── js/
+│           ├── sources.js
+│           ├── checklists.js
+│           └── app.js
 └── docs/
     ├── requirements.md        ← MVP scope & requirements
     ├── sitemap.md             ← site structure & user flows
-    ├── persona.md             ← provisional persona (to be validated by survey)
-    ├── research-summary.md    ← survey method + results (filled from real responses)
+    ├── persona-firstyear.md   ← primary provisional persona
+    ├── research-summary.md    ← survey findings and product decisions
     ├── design-system.md       ← colours, type, components, breakpoints
     ├── future-work.md         ← out-of-scope / next-semester ideas
     ├── wireframes/            ← low-fidelity wireframes
     └── meetings/              ← meeting agendas & minutes
 ```
 
-Weekly progress notes live under `docs/`, e.g. [`docs/week-04/README.md`](docs/week-04/README.md).
+Weekly progress evidence lives under `docs/`, including
+[`docs/week4/README_week4.md`](docs/week4/README_week4.md) and the Week 6 integration notes.
 
 ---
 
@@ -138,9 +146,10 @@ Weekly progress notes live under `docs/`, e.g. [`docs/week-04/README.md`](docs/w
 
 ## Status
 
-🚧 **Early development.** Week 4 is the *build-ready baseline* — research, requirements,
-design and a clean project skeleton — so development can begin in Week 5. See the
-weekly tracker in [`docs/week-04/README.md`](docs/week-04/README.md).
+🧭 **Week 6 — first usable vertical slice.** The Before Arrival checklist is ready for
+team review. It renders verified preparation tasks, saves completion in `localStorage`,
+shows progress and supports mobile layouts. The remaining three stages and supporting
+guides stay deliberately scheduled for Week 7 rather than being hidden behind unfinished UI.
 
 ## Academic context & disclaimer
 
