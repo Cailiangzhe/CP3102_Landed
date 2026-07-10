@@ -1,16 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CP3102 Landed App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Landed helps JCU Singapore international students navigate their first month with a sequenced checklist and verified official links.">
+  <meta name="theme-color" content="#123b5d">
+  <title>Landed | Your first month in Singapore, sorted</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <main class="app-shell">
-    <h1>CP3102 Landed App</h1>
-    <p>Project application scaffold.</p>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Landed home">
+      <span class="brand-mark" aria-hidden="true">L</span>
+      <span>Landed</span>
+    </a>
+    <span class="pilot-badge">JCU Singapore pilot</span>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">Your first month in Singapore</p>
+      <h1 id="hero-title">Know what to do next.</h1>
+      <p class="hero-copy">A sequenced, plain-English checklist for new international students, with every important action linked to its official source.</p>
+      <p class="disclaimer"><strong>A navigator, not an authority.</strong> Always complete official actions through the linked JCU or Singapore government service.</p>
+    </section>
+
+    <section class="progress-panel" aria-labelledby="progress-title">
+      <div>
+        <p class="section-label">Available checklist progress</p>
+        <h2 id="progress-title"><span id="completed-count">0</span> of <span id="task-count">0</span> tasks completed</h2>
+      </div>
+      <strong id="progress-percent" class="progress-percent">0%</strong>
+      <div class="progress-track" aria-hidden="true">
+        <span id="progress-bar"></span>
+      </div>
+      <button id="reset-progress" class="text-button" type="button">Reset progress</button>
+    </section>
+
+    <section id="journey-view" class="journey-section" aria-labelledby="journey-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-label">Four-stage journey</p>
+          <h2 id="journey-title">Start with your current stage</h2>
+        </div>
+        <p>Week 6 delivers the complete Before Arrival stage. The remaining stages are scheduled for Week 7.</p>
+      </div>
+      <div id="stage-grid" class="stage-grid"></div>
+    </section>
+
+    <section id="checklist-view" class="checklist-section" aria-labelledby="checklist-title" hidden>
+      <button id="back-to-journey" class="back-button" type="button">Back to journey</button>
+      <div class="section-heading checklist-heading">
+        <div>
+          <p id="checklist-label" class="section-label"></p>
+          <h2 id="checklist-title"></h2>
+        </div>
+        <p id="checklist-description"></p>
+      </div>
+      <div id="task-list" class="task-list"></div>
+    </section>
   </main>
+
+  <footer>
+    <p><strong>Landed</strong> is a BU3102 / CP3102 student project and is not an official JCU service.</p>
+    <p>Content version: <span id="content-version">-</span></p>
+  </footer>
+
+  <script src="assets/js/sources.js"></script>
+  <script src="assets/js/checklists.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>
