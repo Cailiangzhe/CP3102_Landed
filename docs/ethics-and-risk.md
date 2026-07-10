@@ -85,7 +85,7 @@ Tutor ethics confirmation: Confirmed verbally with tutor in Week 3.
 
 The tutor confirmed that the team may conduct a short anonymous prioritisation survey as long as no sensitive personal information is collected and only anonymised summary results are used in the project documentation.
 
-The exact confirmation date should be checked against the team meeting record.
+The exact confirmation date must be checked against the team's Week 3 meeting record before the final report. Until that date is added, the confirmation is recorded as verbally confirmed with a documentation follow-up open.
 
 ### Follow-Up Owner
 
@@ -93,19 +93,7 @@ Sihan Zhong
 
 ### Current Status
 
-Completed
-
-### Current Status
-
-Tutor ethics confirmation: **Pending**
-
-### Follow-Up Owner
-
-Sihan Zhong
-
-### Target Follow-Up Date
-
-14 June 2026
+**Confirmed verbally; exact date documentation pending.**
 
 ---
 
@@ -113,28 +101,30 @@ Sihan Zhong
 
 | ID | Risk                                             | Likelihood | Impact | Mitigation Action                                                                                                   | Owner    | Status |
 | -- | ------------------------------------------------ | ---------- | ------ | ------------------------------------------------------------------------------------------------------------------- | -------- | ------ |
-| R1 | Survey receives fewer than 20 responses          | Medium     | Low    | Continue development using available responses and clearly record the sample size.                                  | Shiheng  | Open   |
-| R2 | Survey accidentally collects identifying data    | Low        | High   | Use anonymous settings and review all questions before publishing.                                                  | Sihan    | Open   |
-| R3 | Raw survey responses are uploaded to GitHub      | Low        | High   | Publish only anonymised summaries and aggregated findings.                                                          | Sihan    | Open   |
+| R1 | Survey receives fewer than 20 responses          | Medium     | Low    | Continue development using available responses and clearly record the sample size.                                  | Shiheng  | Closed — 27 total / 23 eligible |
+| R2 | Survey accidentally collects identifying data    | Low        | High   | Use anonymous settings and review all questions before publishing.                                                  | Sihan    | Monitoring |
+| R3 | Raw survey responses are uploaded to GitHub      | Low        | High   | Remove raw exports from the public tree; retain aggregate charts and summaries only; audit Git history if sensitive content is found. | Sihan | Mitigation in progress |
 | R4 | Project scope becomes too broad                  | Medium     | High   | Limit the MVP to JCU Singapore students during the first month after arrival. Move extra ideas to `future-work.md`. | Liangzhe | Open   |
-| R5 | Team starts coding before the design is approved | Medium     | Medium | Complete requirements, sitemap, persona, and wireframes before Week 5 development.                                  | Liangzhe | Open   |
-| R6 | Old prototype code is reused                     | Medium     | High   | Create a clean `landed-app/` structure and verify that old code is not copied.                                      | Yuting   | Open   |
+| R5 | Team starts coding before the design is approved | Medium     | Medium | Complete requirements, sitemap, persona, and wireframes before implementation.                                      | Liangzhe | Closed — Week 6 design baseline added |
+| R6 | Old prototype code is reused                     | Medium     | High   | Create a clean `landed-app/` structure and verify that old code is not copied.                                      | Yuting   | Closed — clean-slate scaffold used |
 | R7 | Official information becomes outdated            | Medium     | Medium | Use official links, keep summaries brief, and record the review date.                                               | Zhihao   | Open   |
-| R8 | Tutor ethics requirements are not confirmed      | Medium     | High   | Contact the tutor and record the response or follow-up status.                                                      | Sihan    | Open   |
+| R8 | Tutor ethics confirmation date is not documented | Low        | Medium | Check the Week 3 meeting record and add the exact date before the final report.                                     | Sihan    | Open documentation action |
+| R9 | Ineligible survey responses distort analysis     | Medium     | Medium | Filter Question 1 to the two eligible answers and regenerate final statistics from 23 responses.                   | Shiheng  | Open before final report |
 
 ---
 
-## 8. Week 5 Preparation
+## 8. Week 6 Data and Testing Controls
 
-Before Week 5 begins, the team should confirm that:
+During Week 6, the team must confirm that:
 
 * the survey does not collect sensitive information;
 * the tutor ethics status is recorded;
 * open risks have clear owners;
 * mitigation actions are documented;
-* raw survey responses are not publicly uploaded; and
+* raw survey responses are removed from the current public tree;
+* aggregate findings clearly distinguish 27 total responses from 23 eligible responses; and
 * later usability testing rules will be prepared before testing begins.
 
 ## Last Updated
 
-13 June 2026
+10 July 2026
