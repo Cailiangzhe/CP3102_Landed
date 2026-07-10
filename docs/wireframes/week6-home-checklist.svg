@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Landed Week 6 mobile-first wireframes</title>
+  <desc id="desc">Low-fidelity Home and Before Arrival checklist layouts.</desc>
+  <rect width="1200" height="760" fill="#f3f7f9"/>
+  <text x="60" y="60" font-family="Arial" font-size="30" font-weight="700" fill="#0b2941">Landed Week 6 wireframes</text>
+  <text x="60" y="92" font-family="Arial" font-size="16" fill="#5d6d78">Mobile-first Home and first usable checklist slice</text>
+
+  <g transform="translate(120 130)">
+    <rect width="360" height="570" rx="34" fill="#fff" stroke="#123b5d" stroke-width="3"/>
+    <rect x="20" y="20" width="320" height="44" rx="12" fill="#e8eef2"/>
+    <text x="38" y="48" font-family="Arial" font-size="16" font-weight="700" fill="#123b5d">Landed</text>
+    <rect x="20" y="84" width="320" height="115" rx="16" fill="#eef6f6"/>
+    <text x="38" y="113" font-family="Arial" font-size="12" fill="#0f6f6b">YOUR FIRST MONTH</text>
+    <text x="38" y="148" font-family="Arial" font-size="26" font-weight="700" fill="#0b2941">Know what to do next.</text>
+    <text x="38" y="177" font-family="Arial" font-size="12" fill="#5d6d78">Sequenced tasks + official sources</text>
+    <rect x="20" y="218" width="320" height="78" rx="16" fill="#fff" stroke="#d9e2e8"/>
+    <text x="38" y="246" font-family="Arial" font-size="12" fill="#5d6d78">PROGRESS</text>
+    <text x="38" y="270" font-family="Arial" font-size="18" font-weight="700" fill="#123b5d">0 of 6 complete</text>
+    <rect x="38" y="279" width="280" height="7" rx="4" fill="#dfe9ed"/>
+    <text x="20" y="332" font-family="Arial" font-size="20" font-weight="700" fill="#0b2941">Four-stage journey</text>
+    <rect x="20" y="350" width="320" height="72" rx="14" fill="#fff" stroke="#168c87" stroke-width="2"/>
+    <circle cx="52" cy="386" r="18" fill="#123b5d"/>
+    <text x="47" y="392" font-family="Arial" font-size="15" font-weight="700" fill="#fff">1</text>
+    <text x="82" y="380" font-family="Arial" font-size="16" font-weight="700" fill="#123b5d">Before Arrival</text>
+    <text x="82" y="401" font-family="Arial" font-size="11" fill="#0f6f6b">6 tasks available</text>
+    <rect x="20" y="434" width="320" height="44" rx="12" fill="#e9eff2"/>
+    <text x="38" y="462" font-family="Arial" font-size="13" fill="#5d6d78">2  Arrival Day — Week 7</text>
+    <rect x="20" y="488" width="320" height="44" rx="12" fill="#e9eff2"/>
+    <text x="38" y="516" font-family="Arial" font-size="13" fill="#5d6d78">3  First Week — Week 7</text>
+    <rect x="20" y="542" width="320" height="44" rx="12" fill="#e9eff2"/>
+    <text x="38" y="570" font-family="Arial" font-size="13" fill="#5d6d78">4  First Month — Week 7</text>
+    <text x="132" y="620" font-family="Arial" font-size="14" font-weight="700" fill="#5d6d78">HOME</text>
+  </g>
+
+  <g transform="translate(720 130)">
+    <rect width="360" height="570" rx="34" fill="#fff" stroke="#123b5d" stroke-width="3"/>
+    <text x="24" y="45" font-family="Arial" font-size="14" font-weight="700" fill="#0f6f6b">&lt;- BACK TO JOURNEY</text>
+    <text x="24" y="88" font-family="Arial" font-size="12" fill="#0f6f6b">STAGE 1</text>
+    <text x="24" y="120" font-family="Arial" font-size="27" font-weight="700" fill="#0b2941">Before Arrival</text>
+    <text x="24" y="146" font-family="Arial" font-size="12" fill="#5d6d78">Prepare documents, housing and arrival plans.</text>
+    <g transform="translate(20 172)">
+      <rect width="320" height="105" rx="14" fill="#fff" stroke="#d9e2e8"/>
+      <rect x="16" y="18" width="22" height="22" rx="4" fill="#fff" stroke="#168c87" stroke-width="2"/>
+      <text x="54" y="34" font-family="Arial" font-size="15" font-weight="700" fill="#123b5d">Review your IPA</text>
+      <text x="54" y="55" font-family="Arial" font-size="11" fill="#5d6d78">Check original documents and conditions.</text>
+      <rect x="54" y="70" width="76" height="20" rx="10" fill="#fff1c9"/>
+      <text x="65" y="84" font-family="Arial" font-size="10" font-weight="700" fill="#664400">DO THIS FIRST</text>
+      <text x="144" y="84" font-family="Arial" font-size="10" fill="#0f6f6b">ICA official source</text>
+    </g>
+    <g transform="translate(20 291)">
+      <rect width="320" height="93" rx="14" fill="#e4f5f1" stroke="#168c87"/>
+      <rect x="16" y="18" width="22" height="22" rx="4" fill="#168c87"/>
+      <path d="M21 29l6 6 9-12" fill="none" stroke="#fff" stroke-width="3"/>
+      <text x="54" y="34" font-family="Arial" font-size="15" font-weight="700" fill="#123b5d">Arrange accommodation</text>
+      <text x="54" y="56" font-family="Arial" font-size="11" fill="#5d6d78">Completed state with source metadata.</text>
+      <text x="54" y="78" font-family="Arial" font-size="10" fill="#0f6f6b">JCU official source · verified 10 Jul</text>
+    </g>
+    <g transform="translate(20 398)">
+      <rect width="320" height="82" rx="14" fill="#fff" stroke="#d9e2e8"/>
+      <rect x="16" y="18" width="22" height="22" rx="4" fill="#fff" stroke="#168c87" stroke-width="2"/>
+      <text x="54" y="34" font-family="Arial" font-size="15" font-weight="700" fill="#123b5d">Plan airport transfer</text>
+      <text x="54" y="56" font-family="Arial" font-size="11" fill="#5d6d78">Save the address and choose a route.</text>
+    </g>
+    <text x="102" y="526" font-family="Arial" font-size="12" fill="#5d6d78">Tasks continue vertically</text>
+    <text x="120" y="620" font-family="Arial" font-size="14" font-weight="700" fill="#5d6d78">CHECKLIST</text>
+  </g>
+</svg>
