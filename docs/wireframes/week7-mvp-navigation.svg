@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title description">
+  <title id="title">Landed Week 7 MVP navigation wireframe</title>
+  <desc id="description">Desktop wireframe showing main navigation, progress, four journey stages and supporting content views.</desc>
+  <rect width="1200" height="760" fill="#f3f7f9"/>
+  <rect x="60" y="36" width="1080" height="64" rx="16" fill="#ffffff" stroke="#d9e2e8"/>
+  <rect x="82" y="49" width="38" height="38" rx="12" fill="#123b5d"/>
+  <text x="101" y="75" text-anchor="middle" font-family="Arial" font-size="19" font-weight="700" fill="#ffffff">L</text>
+  <text x="134" y="75" font-family="Arial" font-size="22" font-weight="700" fill="#0b2941">Landed</text>
+  <text x="430" y="75" font-family="Arial" font-size="16" font-weight="700" fill="#0f6f6b">Journey</text>
+  <text x="530" y="75" font-family="Arial" font-size="16" fill="#5d6d78">Topic Guides</text>
+  <text x="660" y="75" font-family="Arial" font-size="16" fill="#5d6d78">FAQ</text>
+  <text x="730" y="75" font-family="Arial" font-size="16" fill="#5d6d78">Official Links</text>
+  <rect x="970" y="54" width="140" height="28" rx="14" fill="#edf5f6" stroke="#d9e2e8"/>
+  <text x="1040" y="73" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#123b5d">JCU Singapore pilot</text>
+
+  <text x="60" y="158" font-family="Arial" font-size="14" font-weight="700" fill="#0f6f6b">WEEK 7 MVP PREVIEW</text>
+  <text x="60" y="212" font-family="Arial" font-size="48" font-weight="700" fill="#0b2941">Know what to do next.</text>
+  <text x="60" y="248" font-family="Arial" font-size="18" fill="#5d6d78">Four stages, short guides and verified official sources.</text>
+  <rect x="790" y="145" width="350" height="112" rx="16" fill="#fff8e7" stroke="#ead7a8"/>
+  <text x="814" y="180" font-family="Arial" font-size="16" font-weight="700" fill="#664400">A navigator, not an authority.</text>
+  <text x="814" y="208" font-family="Arial" font-size="14" fill="#5d563f">Always complete official actions</text>
+  <text x="814" y="230" font-family="Arial" font-size="14" fill="#5d563f">through the linked service.</text>
+
+  <rect x="60" y="294" width="1080" height="120" rx="20" fill="#ffffff" stroke="#d9e2e8"/>
+  <text x="86" y="328" font-family="Arial" font-size="12" font-weight="700" fill="#0f6f6b">YOUR CHECKLIST PROGRESS</text>
+  <text x="86" y="360" font-family="Arial" font-size="22" font-weight="700" fill="#0b2941">0 of 23 tasks completed</text>
+  <text x="1086" y="360" text-anchor="end" font-family="Arial" font-size="24" font-weight="700" fill="#0f6f6b">0%</text>
+  <rect x="86" y="382" width="1000" height="10" rx="5" fill="#dfe9ed"/>
+
+  <text x="60" y="472" font-family="Arial" font-size="14" font-weight="700" fill="#0f6f6b">FOUR-STAGE JOURNEY</text>
+  <text x="60" y="506" font-family="Arial" font-size="30" font-weight="700" fill="#0b2941">Start with your current stage</text>
+
+  <g font-family="Arial">
+    <rect x="60" y="538" width="255" height="170" rx="16" fill="#ffffff" stroke="#168c87"/>
+    <circle cx="90" cy="570" r="18" fill="#123b5d"/><text x="90" y="576" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">1</text>
+    <text x="82" y="616" font-size="20" font-weight="700" fill="#0b2941">Before Arrival</text>
+    <text x="82" y="648" font-size="14" fill="#5d6d78">Documents, housing, plans</text>
+    <text x="82" y="684" font-size="13" font-weight="700" fill="#0f6f6b">6 TASKS</text>
+
+    <rect x="335" y="538" width="255" height="170" rx="16" fill="#ffffff" stroke="#d9e2e8"/>
+    <circle cx="365" cy="570" r="18" fill="#123b5d"/><text x="365" y="576" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">2</text>
+    <text x="357" y="616" font-size="20" font-weight="700" fill="#0b2941">Arrival Day</text>
+    <text x="357" y="648" font-size="14" fill="#5d6d78">Entry, transport, essentials</text>
+    <text x="357" y="684" font-size="13" font-weight="700" fill="#0f6f6b">5 TASKS</text>
+
+    <rect x="610" y="538" width="255" height="170" rx="16" fill="#ffffff" stroke="#d9e2e8"/>
+    <circle cx="640" cy="570" r="18" fill="#123b5d"/><text x="640" y="576" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">3</text>
+    <text x="632" y="616" font-size="20" font-weight="700" fill="#0b2941">First Week</text>
+    <text x="632" y="648" font-size="14" fill="#5d6d78">Pass, campus, accounts</text>
+    <text x="632" y="684" font-size="13" font-weight="700" fill="#0f6f6b">6 TASKS</text>
+
+    <rect x="885" y="538" width="255" height="170" rx="16" fill="#ffffff" stroke="#d9e2e8"/>
+    <circle cx="915" cy="570" r="18" fill="#123b5d"/><text x="915" y="576" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">4</text>
+    <text x="907" y="616" font-size="20" font-weight="700" fill="#0b2941">First Month</text>
+    <text x="907" y="648" font-size="14" fill="#5d6d78">Health, money, support</text>
+    <text x="907" y="684" font-size="13" font-weight="700" fill="#0f6f6b">6 TASKS</text>
+  </g>
+</svg>

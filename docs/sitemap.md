@@ -1,54 +1,54 @@
-# Landed Sitemap and Core User Flow
+# Landed Week 7 Sitemap and User Flows
 
-## Week 6 information architecture
+## Current MVP information architecture
 
 ```text
-Home
-|-- Progress summary
-|-- Four-stage journey
-|   |-- Before Arrival (available in Week 6)
-|   |-- Arrival Day (Week 7)
-|   |-- First Week (Week 7)
-|   `-- First Month (Week 7)
-`-- Navigator disclaimer
-
-Week 7 additions
-|-- Topic Guides
-|   |-- Housing
-|   |-- Transport
-|   |-- SIM and connectivity
-|   |-- Banking
-|   |-- Campus systems
-|   `-- Healthcare and safety
-|-- FAQ
-|-- Official Links
-`-- About / Disclaimer
+Landed
+|-- Journey
+|   |-- Progress summary and Reset
+|   |-- Before Arrival (6 tasks)
+|   |-- Arrival Day (5 tasks)
+|   |-- First Week (6 tasks)
+|   `-- First Month (6 tasks)
+|-- Topic Guides (7 guides)
+|-- FAQ (8 questions)
+`-- Official Links (20 sources grouped by category)
 ```
 
-## Primary Week 6 user flow
+All content uses one HTML page with hash targets. Checklist progress is stored in the same browser; no account or personal data is required.
 
-1. The user opens Landed on a phone or computer.
-2. The user reads the short purpose statement and navigator disclaimer.
-3. The user sees the four-stage journey and opens **Before Arrival**.
-4. The user reads a short task explanation.
-5. The user opens the named official source when confirmation is needed.
-6. The user marks the task completed.
-7. Landed saves progress in the same browser and updates the progress percentage.
-8. The user returns to the journey or resets progress deliberately.
+## Primary checklist flow
+
+1. Open Landed and read the navigator disclaimer.
+2. Review overall progress and the four-stage journey.
+3. Open the stage that matches the current time.
+4. Read one task and open its official source when confirmation is needed.
+5. Mark the task complete.
+6. Return to the journey and see updated overall progress.
+7. Refresh and confirm that progress remains saved.
+
+## Supporting-information flow
+
+1. Select Topic Guides, FAQ or Official Links in the header.
+2. Scan the short topic or question.
+3. Open the named official source in a new tab.
+4. Return to Journey when ready to complete a task.
 
 ## Navigation rules
 
-- The current stage must be visible before supporting content.
-- Unavailable stages must be clearly labelled rather than appearing broken.
-- Official links open in a new tab so checklist progress is not lost.
-- There is no login, profile or personal-data collection in the MVP.
-- Week 7 should preserve the same URLs and interaction patterns established in Week 6.
+- Main navigation is always visible before the page content.
+- The current view uses `aria-current="page"`.
+- Stage cards report their task count.
+- Official links open in a new tab so progress remains available.
+- Landed does not collect a profile or ask the user to enter personal details.
+- Back to Journey returns focus to the Journey heading.
 
 ## Acceptance checks
 
-- The Before Arrival checklist is reachable in one action from the Home screen.
-- Keyboard users can open the stage, mark tasks and return to the journey.
-- Mobile users do not need horizontal scrolling at 360px width.
-- A user can distinguish Landed guidance from the linked official service.
+- Each of the four stages opens in one action from Journey.
+- Topic Guides, FAQ and Official Links are keyboard reachable.
+- Users can distinguish Landed guidance from official instructions.
+- The page has no horizontal overflow at 360px.
+- Task completion remains after refresh on the same browser.
 
-*Approved design baseline for Week 6. Last updated: 10 July 2026.*
+*UX/front-end owner: Shiheng. Updated 17 July 2026.*
