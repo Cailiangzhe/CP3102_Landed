@@ -2,9 +2,9 @@
 
 **Your first month in Singapore, sorted.**
 
-> **Week 6 release candidate:** the first usable Before Arrival checklist now includes
-> saved browser progress, visible completion status and dated official-source links.
-> Arrival Day, First Week, First Month and topic guides are scheduled for Week 7.
+> **Week 7 MVP preview:** all four journey stages are now available with saved
+> browser progress, Topic Guides, FAQ and a verified Official Links directory.
+> This version is feature-complete for usability testing, not the final validated release.
 
 Landed turns a chaotic first month into one sequenced, plain-language checklist —
 *what to do, and in what order* — with every step linked to its official source.
@@ -51,12 +51,12 @@ A **mobile-first web app** that walks a student through a four-stage journey:
 
 **MVP feature set**
 
-- ✅ Four-stage **checklist** — sequenced, plain-language steps
-- ✅ **Saved progress** — tick off steps; see at a glance what remains (stored locally in the browser)
-- ✅ **Topic guides** — housing, transport, SIM, banking, campus systems, healthcare/safety
-- ✅ **FAQ**
-- ✅ **Official-links directory** — every step traceable to its official source
-- ✅ **Mobile-friendly UI**
+- [x] Four-stage **checklist** with 23 sequenced, plain-language tasks
+- [x] **Saved progress** stored locally in the browser
+- [x] Seven **Topic Guides**
+- [x] Eight-item **FAQ**
+- [x] Twenty-source **Official Links** directory
+- [x] Mobile-first UI with keyboard and reduced-motion support
 
 **Out of scope this semester** (parked in [`docs/future-work.md`](docs/future-work.md)): a whole-of-Singapore version, an AI chatbot, accounts/login, and any feature that would have Landed give binding advice rather than point to official sources.
 
@@ -100,6 +100,9 @@ python -m http.server 8000
 
 Or use the **Live Server** extension in VS Code.
 
+The current public build is published at
+[`https://cailiangzhe.github.io/CP3102_Landed/`](https://cailiangzhe.github.io/CP3102_Landed/).
+
 ---
 
 ## Repository structure
@@ -114,6 +117,7 @@ landed/
 │       └── js/
 │           ├── sources.js
 │           ├── checklists.js
+│           ├── support-content.js
 │           └── app.js
 └── docs/
     ├── requirements.md        ← MVP scope & requirements
@@ -121,6 +125,8 @@ landed/
     ├── persona-firstyear.md   ← primary provisional persona
     ├── research-summary.md    ← survey findings and product decisions
     ├── design-system.md       ← colours, type, components, breakpoints
+    ├── link-register.md       ← official-source implementation register
+    ├── usability-test-plan.md ← Week 8 participant test protocol
     ├── future-work.md         ← out-of-scope / next-semester ideas
     ├── wireframes/            ← low-fidelity wireframes
     └── meetings/              ← meeting agendas & minutes
@@ -136,8 +142,8 @@ Weekly progress evidence lives under `docs/`, including
 | Member | Role this project |
 |--------|-------------------|
 | **Liangzhe** | Project coordination / PM — backlog, scope control, tutor liaison |
-| **Yuting** | UX & front-end — sitemap, user flows, wireframes, project skeleton |
-| **Shiheng** | Research & validation — survey design, response summary, usability testing |
+| **Yuting** | Research & validation — survey analysis, participant recruitment, usability testing |
+| **Shiheng** | UX & front-end — user flows, responsive interface and accessibility-oriented UI |
 | **Sihan** | Ethics, data-handling rules, risk register |
 | **Bo Yuan** | Documentation & content lead — requirements, persona, README, minutes |
 | **Zhihao** | Content & sources — official resources, source-credibility checks |
@@ -146,10 +152,10 @@ Weekly progress evidence lives under `docs/`, including
 
 ## Status
 
-🧭 **Week 6 — first usable vertical slice.** The Before Arrival checklist is ready for
-team review. It renders verified preparation tasks, saves completion in `localStorage`,
-shows progress and supports mobile layouts. The remaining three stages and supporting
-guides stay deliberately scheduled for Week 7 rather than being hidden behind unfinished UI.
+**Week 7 - feature-complete MVP preview.** Four stages, Topic Guides, FAQ and Official
+Links are implemented. Progress persists in `localStorage`, all task source IDs resolve,
+and official links carry a 17 July 2026 verification date. Student usability testing,
+eligible-only survey analysis and final link regression remain open before `v1.0`.
 
 ## Academic context & disclaimer
 
