@@ -101,15 +101,16 @@ Sihan Zhong
 
 | ID | Risk                                             | Likelihood | Impact | Mitigation Action                                                                                                   | Owner    | Status |
 | -- | ------------------------------------------------ | ---------- | ------ | ------------------------------------------------------------------------------------------------------------------- | -------- | ------ |
-| R1 | Survey receives fewer than 20 responses          | Medium     | Low    | Continue development using available responses and clearly record the sample size.                                  | Shiheng  | Closed — 27 total / 23 eligible |
+| R1 | Survey receives fewer than 20 responses          | Medium     | Low    | Continue development using available responses and clearly record the sample size.                                  | Yuting   | Closed — 27 total / 23 eligible |
 | R2 | Survey accidentally collects identifying data    | Low        | High   | Use anonymous settings and review all questions before publishing.                                                  | Sihan    | Monitoring |
 | R3 | Raw survey responses are uploaded to GitHub      | Low        | High   | Remove raw exports from the public tree; retain aggregate charts and summaries only; audit Git history if sensitive content is found. | Sihan | Mitigation in progress |
 | R4 | Project scope becomes too broad                  | Medium     | High   | Limit the MVP to JCU Singapore students during the first month after arrival. Move extra ideas to `future-work.md`. | Liangzhe | Open   |
 | R5 | Team starts coding before the design is approved | Medium     | Medium | Complete requirements, sitemap, persona, and wireframes before implementation.                                      | Liangzhe | Closed — Week 6 design baseline added |
-| R6 | Old prototype code is reused                     | Medium     | High   | Create a clean `landed-app/` structure and verify that old code is not copied.                                      | Yuting   | Closed — clean-slate scaffold used |
+| R6 | Old prototype code is reused                     | Medium     | High   | Create a clean `landed-app/` structure and verify that old code is not copied.                                      | Shiheng  | Closed — clean-slate scaffold used |
 | R7 | Official information becomes outdated            | Medium     | Medium | Use official links, keep summaries brief, and record the review date.                                               | Zhihao   | Open   |
 | R8 | Tutor ethics confirmation date is not documented | Low        | Medium | Check the Week 3 meeting record and add the exact date before the final report.                                     | Sihan    | Open documentation action |
-| R9 | Ineligible survey responses distort analysis     | Medium     | Medium | Filter Question 1 to the two eligible answers and regenerate final statistics from 23 responses.                   | Shiheng  | Open before final report |
+| R9 | Ineligible survey responses distort analysis     | Medium     | Medium | Filter Question 1 to the two eligible answers and regenerate final statistics from 23 responses.                   | Yuting   | Open before final report |
+| R10 | Usability notes expose participant information | Low | High | Use participant codes, keep raw notes in restricted storage and publish aggregate results only. | Sihan | Open for Week 8 testing |
 
 ---
 
@@ -125,6 +126,15 @@ During Week 6, the team must confirm that:
 * aggregate findings clearly distinguish 27 total responses from 23 eligible responses; and
 * later usability testing rules will be prepared before testing begins.
 
+## 9. Week 7 Role and Testing Update
+
+The team permanently reassigned two responsibilities:
+
+- Yuting owns research, participant recruitment and usability validation.
+- Shiheng owns UX, front-end layout, responsive behaviour and interface accessibility.
+
+The Week 7 usability plan uses anonymous participant codes and does not request names, student IDs, emails or sensitive personal information. Only aggregate metrics and anonymised themes may be published.
+
 ## Last Updated
 
-10 July 2026
+17 July 2026
