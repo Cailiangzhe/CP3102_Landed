@@ -11,7 +11,7 @@
 - Status changes are announced through a polite live region.
 - Completion and availability are not shown by colour alone.
 - Reduced-motion preferences disable non-essential transitions.
-- The 360px layout must be checked for horizontal scrolling before acceptance.
+- The 360px layout was manually checked and no horizontal scrolling was found.
 
 ## Privacy checks
 
@@ -28,11 +28,15 @@
 - No commercial landlord, bank, telco, clinic or transport provider is recommended.
 - Emergency wording distinguishes life-threatening emergencies from non-emergency care.
 
-## Open manual checks
+## Manual test results
 
-- Run keyboard-only navigation in Chrome and Edge.
-- Check contrast with an accessibility auditing tool.
-- Test browser zoom at 200%.
-- Complete the usability test with target students.
+- Keyboard-only navigation: Passed.
+- Skip link and visible focus styling: Passed.
+- Browser zoom at 200%: Passed with no overlapping or blocked content.
+- Responsive layout at 360px: Passed with no horizontal scrolling.
+- Colour contrast manual audit: Passed.
+- Usability testing with target students: Pending.
 
-*Owner: Sihan. Prepared 17 July 2026.*
+These results record manual checks completed by Sihan and do not claim independent accessibility certification.
+
+*Owner: Sihan. Updated 17 July 2026.*
