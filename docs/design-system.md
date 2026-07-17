@@ -1,4 +1,4 @@
-# Landed Design System - Week 6 Baseline
+# Landed Design System - Week 7 MVP
 
 ## Design principles
 
@@ -51,11 +51,24 @@
 - Progress is stored locally and never sent to a server.
 - Reset requires explicit confirmation.
 
+### Main navigation
+
+- Shows Journey, Topic Guides, FAQ and Official Links.
+- Uses hash targets so the current view can be bookmarked.
+- Marks the current view with `aria-current="page"` and a visible background.
+
+### Topic guide, FAQ and source card
+
+- Topic guides show a relevant stage, three short actions and official links.
+- FAQ items use native `details` and `summary` elements.
+- Source cards show category, organisation, title and verification date.
+- Support content does not recommend commercial providers.
+
 ## Responsive behaviour
 
-- Four columns above 820px.
-- Two columns from 561px to 820px.
-- One column at 560px and below.
+- Four journey columns above 900px.
+- Two journey columns from 621px to 900px.
+- One column at 620px and below.
 - Page margins reduce to 12px per side on small phones.
 - No fixed-width content or horizontal scrolling.
 
@@ -66,5 +79,7 @@
 - Native buttons, links and checkboxes.
 - Colour is never the only indicator of completion or availability.
 - Reduced-motion preference disables non-essential transitions.
+- Progress exposes a labelled `progressbar` state.
+- Dynamic completion changes use a polite live region.
 
-*Last updated: 10 July 2026.*
+*UX/front-end owner: Shiheng. Last updated: 17 July 2026.*
