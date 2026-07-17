@@ -1,29 +1,33 @@
-# Week 6 Checklist Content Decisions
+# Week 7 Content Decisions
 
-## Selected vertical slice
+## Scope
 
-Week 6 implements **Before Arrival** as the first complete product slice. It was chosen because the survey showed that students needed support before arrival as well as later, and because preparation affects accommodation, immigration and first-day readiness.
+Week 7 expands the approved Before Arrival slice into the complete first-month MVP. The app now contains four stages:
 
-## Included tasks
+1. Before Arrival - 6 tasks.
+2. Arrival Day - 5 tasks.
+3. First Week - 6 tasks.
+4. First Month - 6 tasks.
 
-1. Review IPA and Student's Pass requirements.
-2. Confirm JCU admission documents.
-3. Arrange suitable accommodation.
-4. Read JCU pre-arrival information.
-5. Plan airport-to-accommodation travel.
-6. Prepare a first-month budget.
+## Research-led priorities
+
+- Immigration, accommodation and immediate arrival actions appear first.
+- Transport, mobile connection, campus systems, attendance, money and healthcare receive dedicated tasks or guides.
+- Both timeline and topic-based navigation are available.
+- Every important action links to an official source with a verification date.
 
 ## Writing rules
 
-- Every task begins with an action verb.
-- Explanations describe what to check, not what legal, financial or medical decision to make.
-- High-risk topics link to the official source instead of copying detailed requirements.
-- Commercial providers are not ranked or endorsed.
-- `Do this first` appears only on immigration, admission-document and accommodation preparation tasks.
+- Begin each task with an action verb.
+- Keep explanations to one or two short sentences.
+- Describe what to check, not what legal, medical, visa, financial or housing decision to make.
+- Use `Do this first` only for time-sensitive or safety-relevant tasks.
+- Do not rank or endorse commercial providers.
+- Do not copy detailed official requirements that may change.
 
-## Week 7 content contract
+## Structured content contract
 
-New stages must use the same JavaScript structure:
+Checklist tasks use:
 
 ```javascript
 {
@@ -35,6 +39,10 @@ New stages must use the same JavaScript structure:
 }
 ```
 
-Content authors must not change `app.js` or CSS while adding tasks. Source authors must not duplicate URLs inside checklist content.
+Topic Guides and FAQ are stored separately in `support-content.js`. URLs remain centralised in `sources.js`.
 
-*Last updated: 10 July 2026.*
+## Scope control
+
+No login, chatbot, personalised recommendation, booking, payment, reminder or multilingual feature is added. The next iteration is limited to usability findings, high-value fixes and final evidence.
+
+*Content owner: Bo Yuan. Updated 17 July 2026.*
