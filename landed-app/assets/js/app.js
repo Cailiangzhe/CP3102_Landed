@@ -103,6 +103,7 @@
       const card = document.createElement("button");
       card.type = "button";
       card.className = "stage-card";
+      card.dataset.stage = stage.id;
       card.disabled = !stage.available;
       card.setAttribute("aria-label", stage.available ? `Open ${stage.title} checklist` : `${stage.title}, unavailable`);
 
@@ -125,6 +126,7 @@
     elements.checklistLabel.textContent = stage.when;
     elements.checklistTitle.textContent = stage.title;
     elements.checklistDescription.textContent = stage.description;
+    elements.taskList.dataset.stage = stage.id;
     renderTasks(stage.tasks);
     setView("checklist", { hash: `#${stage.id}`, focusSelector: "#checklist-title" });
     announce(`${stage.title} checklist opened with ${stage.tasks.length} tasks.`);
