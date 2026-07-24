@@ -1,0 +1,50 @@
+{
+    "executedAt":  "2026-07-24",
+    "classification":  "scripted internal browser QA, not target-user usability testing",
+    "build":  "Week 8 release candidate",
+    "desktop":  {
+                    "viewport":  "1280x900",
+                    "horizontalOverflow":  false,
+                    "stageCards":  4,
+                    "stageCardWidthsPx":  [
+                                              277,
+                                              277,
+                                              277,
+                                              277
+                                          ],
+                    "navigationLinks":  4,
+                    "jcuLogoLoaded":  true,
+                    "conferenceLogoLoaded":  true
+                },
+    "interaction":  {
+                        "arrivalDayTasks":  5,
+                        "progressAfterOneTaskPercent":  4,
+                        "progressPersistedAfterReload":  true,
+                        "resetConfirmationShown":  true,
+                        "progressAfterResetPercent":  0,
+                        "topicGuides":  7,
+                        "faqItems":  8,
+                        "officialSourceCards":  20
+                    },
+    "mobile":  {
+                   "viewport":  "360x800",
+                   "documentScrollWidthPx":  345,
+                   "horizontalOverflow":  false,
+                   "stageCards":  4,
+                   "stageCardWidthsPx":  [
+                                             321,
+                                             321,
+                                             321,
+                                             321
+                                         ],
+                   "navigationLayout":  "two columns and two rows",
+                   "contentLayout":  "single column",
+                   "jcuLogoLoaded":  true,
+                   "conferenceLogoLoaded":  true
+               },
+    "console":  {
+                    "warnings":  0,
+                    "errors":  0
+                },
+    "limitation":  "No external target student participated."
+}
