@@ -2,165 +2,134 @@
 
 **Your first month in Singapore, sorted.**
 
-> **Week 7 MVP preview:** all four journey stages are now available with saved
-> browser progress, Topic Guides, FAQ and a verified Official Links directory.
-> This version is feature-complete for usability testing, not the final validated release.
+> **Week 8 release candidate:** four journey stages, saved browser progress,
+> Topic Guides, FAQ and a 20-source Official Links directory are implemented.
+> Internal product checks are complete. External usability testing with target
+> international students was not completed, so usability remains unvalidated.
 
-Landed turns a chaotic first month into one sequenced, plain-language checklist —
-*what to do, and in what order* — with every step linked to its official source.
+Landed turns a complex first month into one sequenced, plain-English checklist:
+what to do, when to do it, and where to confirm the official requirement.
 
-> **A navigator, not an authority.** Landed organises and explains information and
-> links to official sources. It does **not** give binding legal, medical, visa or
-> financial advice, and it does not replace official services — it points to them.
-
----
+> **A navigator, not an authority.** Landed organises and explains information.
+> It does not give binding legal, medical, visa or financial advice. Complete
+> official actions through the linked JCU or Singapore government service.
 
 ## The problem
 
-James Cook University (JCU) Singapore admits new international students every
-trimester, and each intake meets the same wall in its first month. Within days of
-arriving, a new student must arrange housing, activate transport with an EZ-Link
-card, buy a local SIM, open a bank account, register for Singpass, organise
-healthcare and learn campus systems such as LearnJCU — all while meeting the ICA
-requirement to maintain 90% attendance.
+New JCU Singapore international students need to complete immigration, housing,
+transport, connectivity, finance, healthcare and campus tasks in a short period.
+The information exists, but it is spread across many official services and is not
+always organised in first-month order.
 
-The information already exists, but it is **scattered and unsequenced**: government
-portals are authoritative but not ordered for someone arriving cold; peer chats are
-actionable but unofficial; generic relocation apps are neither Singapore-specific
-nor verified. Landed is built to sit where nothing else does — **official _and_
-sequenced**.
+Landed provides a time-based route while keeping each important step connected to
+an official source.
 
-## Who it's for
+## Target users
 
-New international students at JCU Singapore, in their **first month** after arrival.
-JCU Singapore is the launch case; the model is designed to extend later (see
-[`docs/future-work.md`](docs/future-work.md)).
+Current and incoming JCU Singapore international students preparing for arrival or
+completing their first month in Singapore.
 
----
+## Product scope
 
-## The product (MVP)
+| Stage | Purpose | Tasks |
+|---|---|---:|
+| Before Arrival | Prepare documents, accommodation, travel and budget | 6 |
+| Arrival Day | Complete entry, transport and immediate setup | 5 |
+| First Week | Complete pass, orientation and campus-system tasks | 6 |
+| First Month | Review health, housing, finance and support | 6 |
 
-A **mobile-first web app** that walks a student through a four-stage journey:
+The release candidate includes:
 
-| Stage | When | Example tasks |
-|------|------|----------------|
-| **1 · Before Arrival** | Pre-departure | Student's Pass / IPA documents · accommodation options · what to pack · airport-to-housing transport · how much money to bring |
-| **2 · Arrival Day** | Touchdown | Clearing immigration · Changi to your accommodation · first EZ-Link top-up · buying a local SIM |
-| **3 · First Week** | Days 1–7 | Opening a bank account · registering for Singpass · LearnJCU & student email · confirming class attendance |
-| **4 · First Month** | Weeks 1–4 | Health insurance & a clinic/GP · longer-term housing · day-to-day budgeting · settling into campus & city life |
+- 23 sequenced checklist tasks;
+- saved progress in browser `localStorage`;
+- seven Topic Guides;
+- eight FAQ items;
+- 20 official-source records;
+- responsive desktop and mobile layouts;
+- keyboard focus, semantic controls and reduced-motion support;
+- JCU Singapore and JCUS 38th Convergence Conference project branding.
 
-**MVP feature set**
+Accounts, login, AI chat, accommodation booking, payments and binding advice remain
+out of scope. See [`docs/future-work.md`](docs/future-work.md).
 
-- [x] Four-stage **checklist** with 23 sequenced, plain-language tasks
-- [x] **Saved progress** stored locally in the browser
-- [x] Seven **Topic Guides**
-- [x] Eight-item **FAQ**
-- [x] Twenty-source **Official Links** directory
-- [x] Mobile-first UI with keyboard and reduced-motion support
+## Run locally
 
-**Out of scope this semester** (parked in [`docs/future-work.md`](docs/future-work.md)): a whole-of-Singapore version, an AI chatbot, accounts/login, and any feature that would have Landed give binding advice rather than point to official sources.
+No build step is required.
 
----
-
-## Why not just ask AI?
-
-AI is a *general answering tool*; Landed is a *school-controlled onboarding system*.
-A chatbot can answer a question, but a newly arrived student often doesn't know what
-to ask, what to do first, or which answer is official. Landed gives a pre-arranged,
-time-based route through the first month, with each step verified and linked to its
-official source.
-
----
-
-## Tech stack
-
-- **Plain HTML, CSS and JavaScript** — no framework, no build step
-- **Saved progress** via the browser's `localStorage`
-- **Hosting:** GitHub Pages (free, static)
-- **Collaboration:** GitHub (code + docs) · WeChat (team comms)
-
-> **Clean-slate build.** This is a fresh, from-scratch codebase. The earlier
-> prototypes are **not** copied in; what carries forward is the *approved thinking*
-> (scope, the four stages, the brand) from the project proposal — not prototype code.
-
-## Run it locally
-
-No build step — it's a static site.
-
-```bash
-# Option A: just open it
-open landed-app/index.html        # macOS
-start landed-app/index.html       # Windows
-
-# Option B: serve it (recommended — needed for some browser features)
+```powershell
 cd landed-app
 python -m http.server 8000
-# then visit http://localhost:8000
 ```
 
-Or use the **Live Server** extension in VS Code.
+Open `http://localhost:8000/` in a browser. The public build is published through
+GitHub Pages at <https://cailiangzhe.github.io/CP3102_Landed/> after the final
+integration branch is merged.
 
-The current public build is published at
-[`https://cailiangzhe.github.io/CP3102_Landed/`](https://cailiangzhe.github.io/CP3102_Landed/).
+## Validation
 
----
+Run the local release checks:
+
+```powershell
+node tools/validate-content.js
+node tools/validate-release.js
+node tools/check-links.js
+```
+
+Week 8 evidence is stored in [`docs/week8/`](docs/week8/).
+
+| Evidence | Status |
+|---|---|
+| Content structure and source-ID validation | Completed |
+| Scripted internal functional walkthrough | Completed |
+| Desktop and 360px responsive inspection | Completed |
+| Accessibility and privacy inspection | Completed internally |
+| Live official-link audit | Completed with restricted pages identified for manual review |
+| External target-student usability testing | Not completed |
+
+Internal checks verify implementation behaviour. They do not replace observation of
+target users and must not be reported as external usability results.
 
 ## Repository structure
 
 ```text
-landed/
-├── README.md                  ← you are here
-├── landed-app/                ← the web app
-│   ├── index.html
-│   └── assets/
-│       ├── css/styles.css
-│       └── js/
-│           ├── sources.js
-│           ├── checklists.js
-│           ├── support-content.js
-│           └── app.js
-└── docs/
-    ├── requirements.md        ← MVP scope & requirements
-    ├── sitemap.md             ← site structure & user flows
-    ├── persona-firstyear.md   ← primary provisional persona
-    ├── research-summary.md    ← survey findings and product decisions
-    ├── design-system.md       ← colours, type, components, breakpoints
-    ├── link-register.md       ← official-source implementation register
-    ├── usability-test-plan.md ← Week 8 participant test protocol
-    ├── future-work.md         ← out-of-scope / next-semester ideas
-    ├── wireframes/            ← low-fidelity wireframes
-    └── meetings/              ← meeting agendas & minutes
+.
+|-- README.md
+|-- landed-app/
+|   |-- index.html
+|   `-- assets/
+|       |-- css/styles.css
+|       |-- images/
+|       `-- js/
+|-- docs/
+|   |-- week8/
+|   |-- meetings/
+|   `-- wireframes/
+|-- tools/
+|   |-- validate-content.js
+|   |-- validate-release.js
+|   `-- check-links.js
+`-- .github/workflows/deploy-pages.yml
 ```
-
-Weekly progress evidence lives under `docs/`, including
-[`docs/week4/README_week4.md`](docs/week4/README_week4.md) and the Week 6 integration notes.
-
----
 
 ## Team
 
-| Member | Role this project |
-|--------|-------------------|
-| **Liangzhe** | Project coordination / PM — backlog, scope control, tutor liaison |
-| **Yuting** | Research & validation — survey analysis, participant recruitment, usability testing |
-| **Shiheng** | UX & front-end — user flows, responsive interface and accessibility-oriented UI |
-| **Sihan** | Ethics, data-handling rules, risk register |
-| **Bo Yuan** | Documentation & content lead — requirements, persona, README, minutes |
-| **Zhihao** | Content & sources — official resources, source-credibility checks |
+| Member | Week 8 ownership |
+|---|---|
+| Liangzhe | Final integration, release validation and deployment |
+| Yuting | Research and internal validation reporting |
+| Shiheng Wang | UX, front-end, responsive behaviour and project branding |
+| Sihan Zhong | Accessibility, privacy, ethics and risk review |
+| Bo Yuan | Documentation, content review and meeting records |
+| Zhihao | Official-source and live-link audit |
 
----
+Yuting and Shiheng's role swap remains permanent for this iteration.
 
-## Status
+## Academic context and disclaimer
 
-**Week 7 - feature-complete MVP preview.** Four stages, Topic Guides, FAQ and Official
-Links are implemented. Progress persists in `localStorage`, all task source IDs resolve,
-and official links carry a 17 July 2026 verification date. Student usability testing,
-eligible-only survey analysis and final link regression remain open before `v1.0`.
+Landed is a BU3102 / CP3102 Multidisciplinary Project for JCU Singapore,
+Trimester 2, 2026, and the JCUS 38th Convergence Conference. The JCU and event
+logos identify the academic context. Landed is not an official JCU student service
+and is not endorsed by the external agencies it links to.
 
-## Academic context & disclaimer
-
-Student project for **BU3102 / CP3102 Multidisciplinary Project**, JCU Singapore,
-Trimester 2, 2026. Landed is **not** an official JCU service and is **not** affiliated
-with or endorsed by JCU, ICA, MOH, LTA or any agency it links to. All official actions
-must be completed through the relevant official channel; always verify details against
-the linked official source.
+All source requirements can change. Users must confirm current details through the
+linked official service.
