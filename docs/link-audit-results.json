@@ -1,0 +1,192 @@
+{
+  "summary": {
+    "checkedAt": "2026-07-24T06:59:38.314Z",
+    "total": 20,
+    "reachable": 10,
+    "restricted": 10,
+    "broken": 0,
+    "networkErrors": 0
+  },
+  "results": [
+    {
+      "id": "ica-student-pass",
+      "organisation": "ICA Singapore",
+      "title": "Student's Pass",
+      "requestedUrl": "https://www.ica.gov.sg/reside/STP",
+      "finalUrl": "https://www.ica.gov.sg/reside/STP",
+      "status": 200,
+      "result": "reachable"
+    },
+    {
+      "id": "ica-arrival-card",
+      "organisation": "ICA Singapore",
+      "title": "Visiting Singapore and SG Arrival Card",
+      "requestedUrl": "https://www.ica.gov.sg/public-education/visiting-singapore",
+      "finalUrl": "https://www.ica.gov.sg/public-education/visiting-singapore",
+      "status": 200,
+      "result": "reachable"
+    },
+    {
+      "id": "jcu-international-admissions",
+      "organisation": "JCU Singapore",
+      "title": "International student admissions requirements",
+      "requestedUrl": "https://www.jcu.edu.sg/courses-and-study/admissions/admissions-procedures-And-requirements/admissions-international-students",
+      "finalUrl": "https://www.jcu.edu.sg/courses-and-study/admissions/admissions-procedures-And-requirements/admissions-international-students",
+      "status": 403,
+      "result": "restricted"
+    },
+    {
+      "id": "jcu-accommodation",
+      "organisation": "JCU Singapore",
+      "title": "Accommodation information",
+      "requestedUrl": "https://www.jcu.edu.sg/current-students/accommodation",
+      "finalUrl": "https://www.jcu.edu.sg/current-students/accommodation",
+      "status": 403,
+      "result": "restricted"
+    },
+    {
+      "id": "jcu-pre-arrival-system",
+      "organisation": "JCU Singapore",
+      "title": "Pre-Arrival System",
+      "requestedUrl": "https://services.jcu.edu.sg/PreArrSystem",
+      "finalUrl": "https://services.jcu.edu.sg/PreArrSystem",
+      "status": 200,
+      "result": "reachable"
+    },
+    {
+      "id": "changi-transport",
+      "organisation": "Changi Airport",
+      "title": "Leaving the airport: transport options",
+      "requestedUrl": "https://www.changiairport.com/en/at-changi/transport-and-directions/leaving-the-airport.html",
+      "finalUrl": "https://www.changiairport.com/en/at-changi/transport-and-directions/leaving-the-airport.html",
+      "status": 200,
+      "result": "reachable"
+    },
+    {
+      "id": "lta-journey",
+      "organisation": "Land Transport Authority",
+      "title": "Plan your journey and pay for public transport",
+      "requestedUrl": "https://www.lta.gov.sg/content/ltagov/en/getting_around/public_transport/plan_your_journey.html",
+      "finalUrl": "https://www.lta.gov.sg/content/ltagov/en/getting_around/public_transport/plan_your_journey.html",
+      "status": 200,
+      "result": "reachable"
+    },
+    {
+      "id": "imda-sim-registration",
+      "organisation": "IMDA Singapore",
+      "title": "Current SIM card registration safeguards",
+      "requestedUrl": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2026/tightening-of-limit-on-number-of-postpaid-sim-cards",
+      "finalUrl": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2026/tightening-of-limit-on-number-of-postpaid-sim-cards",
+      "status": 200,
+      "result": "reachable"
+    },
+    {
+      "id": "jcu-orientation",
+      "organisation": "JCU Singapore",
+      "title": "During Orientation",
+      "requestedUrl": "https://www.jcu.edu.sg/courses-and-study/orientation/during-orientation",
+      "finalUrl": "https://www.jcu.edu.sg/courses-and-study/orientation/during-orientation",
+      "status": 403,
+      "result": "restricted"
+    },
+    {
+      "id": "jcu-current-students",
+      "organisation": "JCU Singapore",
+      "title": "Current student systems and quick links",
+      "requestedUrl": "https://www.jcu.edu.sg/current-students",
+      "finalUrl": "https://www.jcu.edu.sg/current-students",
+      "status": 403,
+      "result": "restricted"
+    },
+    {
+      "id": "jcu-learning-technologies",
+      "organisation": "JCU Singapore",
+      "title": "Learning technologies and LearnJCU support",
+      "requestedUrl": "https://www.jcu.edu.sg/current-students/student-support-services/learning-support/learning-technologies",
+      "finalUrl": "https://www.jcu.edu.sg/current-students/student-support-services/learning-support/learning-technologies",
+      "status": 403,
+      "result": "restricted"
+    },
+    {
+      "id": "jcu-attendance-insurance",
+      "organisation": "JCU Singapore",
+      "title": "Attendance and medical insurance",
+      "requestedUrl": "https://www.jcu.edu.sg/current-students/student-support-services/attendance-and-insurance",
+      "finalUrl": "https://www.jcu.edu.sg/current-students/student-support-services/attendance-and-insurance",
+      "status": 403,
+      "result": "restricted"
+    },
+    {
+      "id": "singpass-registration",
+      "organisation": "Singpass",
+      "title": "Singpass registration guides",
+      "requestedUrl": "https://portal.singpass.gov.sg/home/ui/support",
+      "finalUrl": "https://portal.singpass.gov.sg/home/ui/support",
+      "status": 200,
+      "result": "reachable"
+    },
+    {
+      "id": "moneysense-budgeting",
+      "organisation": "MoneySense Singapore",
+      "title": "Managing your money",
+      "requestedUrl": "https://www.moneysense.gov.sg/managing-your-money/",
+      "finalUrl": "https://www.moneysense.gov.sg/managing-your-money/",
+      "status": 200,
+      "result": "reachable"
+    },
+    {
+      "id": "jcu-living-costs",
+      "organisation": "JCU Singapore",
+      "title": "Living in Singapore and cost guide",
+      "requestedUrl": "https://www.jcu.edu.sg/current-students/accommodation/living-in-singapore",
+      "finalUrl": "https://www.jcu.edu.sg/current-students/accommodation/living-in-singapore",
+      "status": 403,
+      "result": "restricted"
+    },
+    {
+      "id": "cea-renting",
+      "organisation": "Council for Estate Agencies",
+      "title": "Renting a private residential property",
+      "requestedUrl": "https://www.cea.gov.sg/consumers/transacting-on-your-own/renting-or-renting-out-a-private-residential-property/",
+      "finalUrl": "https://www.cea.gov.sg/consumers/transacting-on-your-own/renting-or-renting-out-a-private-residential-property/",
+      "status": 200,
+      "result": "reachable"
+    },
+    {
+      "id": "jcu-student-support",
+      "organisation": "JCU Singapore",
+      "title": "Student support services",
+      "requestedUrl": "https://www.jcu.edu.sg/current-students/student-support-services",
+      "finalUrl": "https://www.jcu.edu.sg/current-students/student-support-services",
+      "status": 403,
+      "result": "restricted"
+    },
+    {
+      "id": "jcu-counselling",
+      "organisation": "JCU Singapore",
+      "title": "Counselling Office",
+      "requestedUrl": "https://www.jcu.edu.sg/current-students/student-support-services/counselling-office",
+      "finalUrl": "https://www.jcu.edu.sg/current-students/student-support-services/counselling-office",
+      "status": 403,
+      "result": "restricted"
+    },
+    {
+      "id": "jcu-learning-centre",
+      "organisation": "JCU Singapore",
+      "title": "Learning Centre",
+      "requestedUrl": "https://www.jcu.edu.sg/current-students/student-support-services/learning-support",
+      "finalUrl": "https://www.jcu.edu.sg/current-students/student-support-services/learning-support",
+      "status": 403,
+      "result": "restricted"
+    },
+    {
+      "id": "scdf-emergency",
+      "organisation": "Singapore Civil Defence Force",
+      "title": "Emergency Medical Services",
+      "requestedUrl": "https://www.scdf.gov.sg/home/about-scdf/emergency-medical-services",
+      "finalUrl": "https://www.scdf.gov.sg/home/about-scdf/emergency-medical-services",
+      "status": 200,
+      "result": "reachable"
+    }
+  ]
+}
