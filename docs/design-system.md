@@ -1,85 +1,111 @@
-# Landed Design System - Week 7 MVP
+# Landed Design System - Week 8 JCU-Aligned Playful Utility
+
+## Design direction
+
+Landed uses a **JCU-aligned Playful Utility** style: welcoming enough to engage a new student, but structured enough to help them finish important tasks. The interface uses the blue, gold, white and dark-grey character of the James Cook University Singapore logo while keeping Landed visually identifiable as a student project.
+
+The interface should feel approximately 80% practical guide and 20% playful campaign. Decoration must never make the sequence, official source or task status harder to find.
 
 ## Design principles
 
-1. **Calm before clever:** the interface should reduce pressure, not add novelty.
-2. **Sequence first:** users should immediately see when a task belongs.
-3. **Official and traceable:** sources and verification dates stay close to the task.
-4. **Mobile first:** the primary layout must work at 360px before desktop polish.
-5. **Plain English:** short sentences, familiar labels and no unexplained abbreviations.
+1. **Confident, never chaotic:** use bold colour and type in the hero, then keep working areas aligned and predictable.
+2. **Sequence first:** users should immediately see the four stages and know where to begin.
+3. **Official and traceable:** source names and verification dates stay close to every important task.
+4. **Mobile first:** the complete journey must remain readable at 360px.
+5. **Motion supports meaning:** hover and completion transitions give feedback; they do not distract or block progress.
+6. **Plain English:** use short sentences, familiar labels and no unexplained abbreviations.
 
 ## Colour tokens
 
 | Token | Hex | Use |
 |---|---:|---|
-| Navy | `#123B5D` | Brand, stage markers, primary headings |
-| Navy dark | `#0B2941` | High-contrast headings |
-| Teal | `#168C87` | Progress, links, interactive emphasis |
-| Teal dark | `#0F6F6B` | Accessible link text on light backgrounds |
-| Gold | `#F3B43F` | Caution, urgency and disclaimer accent |
-| Ink | `#172B3A` | Body text |
-| Muted | `#5D6D78` | Supporting text and metadata |
+| JCU blue | `#0067A7` | Hero route board, brand emphasis and Before Arrival stage |
+| Deep blue | `#004F80` | Borders, navigation, progress panel and First Month stage |
+| Mid blue | `#1781B8` | Arrival Day stage and supporting accents |
+| Dark grey | `#1F2933` | Headings and high-contrast text |
+| JCU gold | `#F4C300` | Focus rings, progress, priority labels and small highlights |
+| Pale blue | `#DCEFF8` | Completed states and supporting surfaces |
+| Page blue-white | `#F7FBFD` | Page background |
 | Surface | `#FFFFFF` | Cards and content panels |
-| Soft surface | `#F3F7F9` | Page background |
+
+Stage colour mapping uses one coherent blue family: Before Arrival is JCU blue, Arrival Day is mid blue, First Week is medium-deep blue and First Month is deep blue. A stage always includes text and a number, so colour is not the only identifier.
 
 ## Typography
 
-- Font stack: `Inter, Arial, Helvetica, sans-serif`.
-- Hero heading: responsive `2.5rem` to `5rem`, strong but brief.
-- Section headings: `1.35rem` to `2rem`.
-- Body text: browser default `1rem` with at least `1.5` line height.
-- Metadata and labels: no smaller than `0.76rem`; do not use them for essential instructions.
+- Use local system fonts only; the site does not depend on a font download.
+- Display headings use `Arial Black, Arial, Helvetica, sans-serif`.
+- Body text uses `Arial, Helvetica, sans-serif` with at least `1.48` line height.
+- The hero heading is large and compact; task descriptions use conventional spacing for easier scanning.
+- Metadata is no smaller than `0.74rem` and never contains essential instructions by itself.
+
+## Visual language
+
+- Use two- or three-pixel deep-blue borders to make controls and cards visually definite.
+- Offset shadows may use the relevant stage colour. They communicate hierarchy without relying on blur.
+- Rounded rectangles remain aligned in task-heavy areas. Small rotation is limited to decorative hero elements.
+- The hero route board is made with HTML and CSS, not an external image. It introduces the four-stage model before the user reaches the checklist.
+- Gold is reserved for current state, progress, focus and small highlights. Long reading areas stay white or pale blue.
+- The supplied James Cook University Singapore logo appears in the header with a `Student project` label to preserve context without presenting Landed as an official service.
+- The supplied JCUS 38th Convergence Conference logo appears beside it as the course project activity mark. The two logos remain visually separate and retain descriptive alternative text.
 
 ## Components
-
-### Stage card
-
-- Shows sequence number, stage title, one-sentence purpose and availability state.
-- Available cards use a button element.
-- Future cards are disabled and labelled `Coming in Week 7`.
-
-### Task card
-
-- Uses a native checkbox with an explicit accessible label.
-- Contains a short task title and plain-English explanation.
-- Shows a `Do this first` label only for genuinely urgent tasks.
-- Names the official organisation and displays `Last verified`.
-
-### Progress panel
-
-- Displays completed count, total available count and percentage.
-- Progress is stored locally and never sent to a server.
-- Reset requires explicit confirmation.
 
 ### Main navigation
 
 - Shows Journey, Topic Guides, FAQ and Official Links.
 - Uses hash targets so the current view can be bookmarked.
-- Marks the current view with `aria-current="page"` and a visible background.
+- The current view uses dark text, a gold background and a visible deep-blue border.
+
+### Hero route board
+
+- Summarises the route as Before, Arrival, Week 1 and Month 1.
+- Uses an original CSS grid pattern and arrival stamp; no third-party visual assets are required.
+- The disclaimer remains directly below the board and clearly states that Landed is not an authority.
+
+### Stage card
+
+- Shows sequence number, stage title, one-sentence purpose and task status.
+- Uses the fixed stage colour for its number and offset shadow.
+- Available cards are native buttons with visible keyboard focus.
+
+### Task card
+
+- Uses a native checkbox with an explicit accessible label.
+- Contains a short title, plain-English explanation, official organisation and verification date.
+- A completed task receives a tinted background as well as a checked control.
+- `Do this first` appears only for genuinely urgent tasks.
+
+### Progress panel
+
+- Uses a deep-blue panel and gold progress fill for strong contrast.
+- Displays completed count, total count and percentage.
+- Progress is stored locally and never sent to a server.
+- Reset requires explicit confirmation.
 
 ### Topic guide, FAQ and source card
 
 - Topic guides show a relevant stage, three short actions and official links.
 - FAQ items use native `details` and `summary` elements.
 - Source cards show category, organisation, title and verification date.
-- Support content does not recommend commercial providers.
+- Supporting cards use controlled accent shadows while keeping their text surface white.
 
 ## Responsive behaviour
 
-- Four journey columns above 900px.
-- Two journey columns from 621px to 900px.
+- Four journey columns above 960px.
+- Two journey columns from 621px to 960px.
 - One column at 620px and below.
-- Page margins reduce to 12px per side on small phones.
-- No fixed-width content or horizontal scrolling.
+- The hero route board moves below the introduction on tablets and phones.
+- At 390px, route stops stack vertically and task controls remain touch friendly.
+- No fixed-width content or horizontal page scrolling.
 
 ## Accessibility baseline
 
-- Semantic heading order and landmark elements.
-- Visible keyboard focus.
-- Native buttons, links and checkboxes.
-- Colour is never the only indicator of completion or availability.
-- Reduced-motion preference disables non-essential transitions.
+- Semantic landmarks and heading order are preserved.
+- Focus uses a four-pixel yellow outline with clear offset.
+- Native buttons, links, checkboxes, `details` and `summary` elements remain operable by keyboard.
+- Colour is never the only indicator of stage, completion or availability.
+- `prefers-reduced-motion` removes transitions and decorative transforms.
 - Progress exposes a labelled `progressbar` state.
 - Dynamic completion changes use a polite live region.
 
-*UX/front-end owner: Shiheng. Last updated: 17 July 2026.*
+*UX/front-end owner: Shiheng. Last updated: 22 July 2026.*
