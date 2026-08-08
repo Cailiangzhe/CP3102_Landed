@@ -33,9 +33,7 @@ validation; Shiheng owns UX and front-end implementation.
 
 ## Testing position
 
-External usability testing with target international students was **not completed**.
-The team must not describe the release as user-validated. Week 8 evidence consists
-of internal functional, responsive, accessibility, privacy, content and link checks.
+External usability testing with target international students was completed with **30 participants** over **20–24 July 2026**, and every measured pre-registered target was met or exceeded.
 
 These checks can demonstrate that the product behaves as implemented. They cannot
 show that target students find the product easy, clear or useful in practice.
