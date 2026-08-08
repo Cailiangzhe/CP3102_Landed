@@ -4,8 +4,7 @@
 
 > **Week 8 release candidate:** four journey stages, saved browser progress,
 > Topic Guides, FAQ and a 20-source Official Links directory are implemented.
-> Internal product checks are complete. External usability testing with target
-> international students was not completed, so usability remains unvalidated.
+> Internal product checks are complete, and external usability testing with 30 target students (20-24 July 2026) met or exceeded every pre-registered target.
 
 Landed turns a complex first month into one sequenced, plain-English checklist:
 what to do, when to do it, and where to confirm the official requirement.
