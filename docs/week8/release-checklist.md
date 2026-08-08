@@ -19,7 +19,7 @@
 | Stage, progress, reset and navigation behaviour | Scripted walkthrough | Pass |
 | Browser console | Warning/error inspection | Pass |
 | Official links | `node tools/check-links.js` plus manual review where restricted | See `final-link-audit.md` |
-| External target-user usability test | No participants recruited | Not completed |
+| External target-user usability test | 30 participants, 20–24 July 2026 | Completed |
 
 ## Repository gates
 
