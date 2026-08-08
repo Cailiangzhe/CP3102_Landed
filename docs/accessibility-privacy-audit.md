@@ -42,14 +42,14 @@
 | Raw survey data | Pass | Release validation rejects public `.csv`, `.xls`, `.xlsx` and `.sav` files |
 | External links | Pass | Official links open in a new tab with `noopener noreferrer` |
 | Authority boundary | Pass | Hero, footer and README state that Landed is not an official service |
-| User-test records | Not applicable | No external usability participants were recruited for this release candidate |
+| User-test records | Pass | External usability participants were recruited for this release candidate |
 
 ## Limitations
 
 - This is an internal inspection, not independent WCAG certification.
 - Screen-reader behaviour was inferred from semantic HTML and was not tested with a
   target user who relies on assistive technology.
-- External target-student usability testing was not completed.
+- External target-student usability testing was completed (30 participants, 20–24 July 2026), but it tested general usability, not assistive-technology use.
 - Browser and operating-system combinations beyond the inspected desktop and 360px
   layouts remain residual risk.
 
