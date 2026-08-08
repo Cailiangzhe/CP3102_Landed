@@ -36,7 +36,7 @@
 
 ## Known limitations
 
-- External usability testing with target international students was not completed.
+- External usability testing with target international students was completed: 30 participants, 20–24 July 2026, all measured targets met or exceeded.
 - Eligible-only survey statistics remain dependent on the private response sheet and
   must not be regenerated from guessed data.
 - Some official services may restrict automated requests and require manual browser
