@@ -83,7 +83,7 @@ Week 8 evidence is stored in [`docs/week8/`](docs/week8/).
 | Desktop and 360px responsive inspection | Completed |
 | Accessibility and privacy inspection | Completed internally |
 | Live official-link audit | Completed with restricted pages identified for manual review |
-| External target-student usability testing | Not completed |
+| External target-student usability testing | Completed - 30 participants, 20-24 July 2026 |
 
 Internal checks verify implementation behaviour. They do not replace observation of
 target users and must not be reported as external usability results.
